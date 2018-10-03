@@ -2,7 +2,7 @@
 <AppInstaller
     xmlns="http://schemas.microsoft.com/appx/appinstaller/2017"
     Version="1.0.0.0" 
-    Uri="https://raw.githubusercontent.com/UnigramDev/Unigram/develop/appset.appinstaller" > 
+    Uri="https://unigramdev.github.io/appset.appinstaller" > 
    
     <MainBundle 
         Name="38833FF26BA1D.UnigramPreview"
