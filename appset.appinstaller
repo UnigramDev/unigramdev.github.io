@@ -2,13 +2,13 @@
 <AppInstaller
     xmlns="http://schemas.microsoft.com/appx/appinstaller/2017"
     Version="1.0.0.0" 
-    Uri="https://unigramdev.github.io/appset.appinstaller" > 
+    Uri="https://unigramdev.github.io/appset.appinstaller"> 
    
     <MainBundle 
         Name="38833FF26BA1D.UnigramPreview"
         Publisher="CN=D89C87B4-2758-402A-8F40-3571D00882AB"
-        Version="2.1.1761.0"
-        Uri="https://www.dropbox.com/s/71rp48tj6g0csjd/Unigram_2.1.1761.0_x86_x64_arm.appxbundle?dl=1" />
+        Version="2.1.1767.0"
+        Uri="https://www.dropbox.com/s/en3h1f9p9j48as9/38833FF26BA1D.UnigramPreview_2.1.1767.0_neutral_~_g9c9v27vpyspw.AppxBundle?dl=1" />
 
     <Dependencies>
         <Package Name="Microsoft.NET.Native.Framework.1.7" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.7.25531.0" ProcessorArchitecture="x86" Uri="https://www.dropbox.com/s/0nj5nn4b5vhvz0p/Microsoft.NET.Native.Framework.1.7.appx?dl=1" />
