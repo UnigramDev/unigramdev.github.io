@@ -7,7 +7,7 @@
     <MainBundle 
         Name="38833FF26BA1D.UnigramPreview"
         Publisher="CN=D89C87B4-2758-402A-8F40-3571D00882AB"
-        Version="2.4.2073"
+        Version="2.4.2073.0"
         Uri="https://www.dropbox.com/s/f8dcyq4cnz8eh94/2.4.2073.AppxBundle?dl=1" />
 
     <Dependencies>
