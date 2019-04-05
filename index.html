@@ -1,27 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?>
-<AppInstaller
-    xmlns="http://schemas.microsoft.com/appx/appinstaller/2017"
-    Version="1.0.0.0" 
-    Uri="https://unigramdev.github.io/appset.appinstaller"> 
-   
-    <MainBundle 
-        Name="38833FF26BA1D.UnigramPreview"
-        Publisher="CN=D89C87B4-2758-402A-8F40-3571D00882AB"
-        Version="3.4.2179.0"
-        Uri="%%URI%%" />
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+  Unigram
+  </title>
+  <style>body{    padding:5%;    display:flex;    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    line-height: normal;    color:#333333;    font-size:15px;}.t{    border:1px solid red;}.left-col{    flex: 0 0 200px;}.right-col{    flex: 1 1 30px;    max-width:650px;}img{    width:200px;    height:200px;    border: 1px solid #D2D2D2;}.additional-links-title{    margin-top:50px;    margin-bottom:20px;}.lg{    font-size:20px;}.xl{    font-size:34px;}button{    background-color:#0078D4;    color:#FFFFFF;    text-align:center;    width:150px;    height:40px;    border:none;    outline:none;    cursor: pointer;}a{    color: #0067B8;    text-decoration:none;    cursor: pointer;}.dark-blue{    color: #0078D4}.mb-24{    margin-bottom:24px;}.mr-28{    margin-right:28px;}.mb-12{    margin-bottom:12px;}.mb-28{    margin-bottom:28;}.key{    font-weight: bold;    margin-right:24px;    }.value{    flex: 0 0 }.info-row{    display:flex;}.info-row > div{    flex: 0 0 250px;}.mr-24{    margin-right:24px;}.alinks > a{    margin-bottom:15px;    display:block;}@font-face {    font-family: 'FabricMDL2Icons';    src: url('data:application/octet-stream;base64,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') format('truetype');  }    .ms-Icon {    -moz-osx-font-smoothing: grayscale;    -webkit-font-smoothing: antialiased;    font-family: 'FabricMDL2Icons';    font-style: normal;    font-weight: normal;    speak: none;  }    .ms-Icon--ChevronDown:before{ content: "\E70D"; }  .ms-Icon--ChevronUp:before{ content: "\E70E"; }  .ms-Icon--ChevronRight:before { content: "\E76C"; }  .alinks{    max-height:0px;    transition: max-height .2s ease-out;    overflow:hidden;  }  input#achk:checked + .alinks{    height:auto;    max-height:400px;    transition: max-height .5s ease-in !important;  }  .sm{      font-size:10px;  }  label{      cursor: pointer;  }  .dlbuttons > a{   margin-right: 5px;  }  .app-image{        background-color:transparent;  }</style>
+</head>
+<body class="body">
+  <div class="left-col mr-28">
+	 <img alt='application image' class='app-image' src=' data:image/png;base64,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'>        
+	 <div class="lg additional-links-title">
+	 <label for="achk">
+	 Additional Links
+	 <i class="ms-Icon--ChevronDown ms-Icon sm">
+	 </i>
+	 </label>
+	 </div>
+	 <input type="checkbox" id="achk" style="display:none;">        
+	 <div class="alinks">
+	 <!--<a href='https://raw.githubusercontent.com/UnigramDev/Unigram/develop/appset.appinstaller/TestRS5_1.0.0.0_Debug_Test/TestRS5_1.0.0.0_x86_x64_arm_Debug.cer'>Publisher Certificate</a>-->
+	 <a href='https://unigramdev.github.io/appset.appinstaller'>App Installer File</a>
+	 <a href='https://www.dropbox.com/s/l3aglqayc0jdeqo/38833FF26BA1D.UnigramPreview_3.4.2179.0_neutral_~_g9c9v27vpyspw.appxbundle?dl=1'>Package Bundle</a>
+	 </div>
+  </div>
+  <div class="right-col">
+	 <div class="app-title xl  mb-24 dark-blue">
+	 Unigram - A Telegram universal experience
+	 </div>
+	 <div class="app-version lg mb-24">
+	 Unigram
+	 3.4.2179.0
+	 </div>
+	 <div class="app-description mb-24">
+An unofficial uwp Telegram client for Windows 10 devices.
+Based on TDlib and specifically optimised for Windows 10, Unigram offers a bunch of features, included Action Centre support, calls, secret chats, instant view, built-in app lock and filter chats by type, unread and muted state.
+	 </div>
+	 <div class="mb-12 dlbuttons">
+	 <a href='ms-appinstaller:?source=https://unigramdev.github.io/appset.appinstaller'><button>Get the app <i class='ms-Icon ms-Icon--ChevronRight sm'></i></button></a>
+	 </div>
+	 <div class="mb-24">
+	 <a href="https://go.microsoft.com/fwlink/?linkid=870616">
+	 Troubleshoot installation
+	 </a>
+	 </div>
+	 <div class="mb-28 lg">
+	 Application Information
+	 </div>
+	 <div class="info-table">
+		<div class="info-row">
+		   <div class="key">
+		   Version
+		   </div>
+		   <div class="value">
+		   3.4.2179.0
+		   </div>
+		</div>
+		<br/>            
+		<div class="info-row">
+		   <div class="key">
+		   Required Operating System
+		   </div>
+		   <div class="value">
+		   10.0.14393.0
+		   </div>
+		</div>
+		<br/>            
+		<div class="info-row">
+		   <div class="key">
+		   Architectures
+		   </div>
+		   <div class="value">
+		   x86|x64|ARM
+		   </div>
+		</div>
+		<br/>            
+		<div class="info-row">
+		   <div class="key">
+		   Publisher
+		   </div>
+		   <div class="value">
+		   Fela Ameghino
+		   </div>
+		</div>
+	 </div>
+  </div>
+</body>
+</html>
 
-    <Dependencies>
-        <Package Name="Microsoft.NET.Native.Framework.1.7" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.7.25531.0" ProcessorArchitecture="x86" Uri="https://www.dropbox.com/s/0nj5nn4b5vhvz0p/Microsoft.NET.Native.Framework.1.7.appx?dl=1" />
-	<Package Name="Microsoft.NET.Native.Framework.1.7" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.7.25531.0" ProcessorArchitecture="x64" Uri="https://www.dropbox.com/s/sm971rrk8mdrjyj/Microsoft.NET.Native.Framework.1.7.appx?dl=1" />
-		
-        <Package Name="Microsoft.NET.Native.Runtime.1.7" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.7.25531.0" ProcessorArchitecture="x86" Uri="https://www.dropbox.com/s/yebukgwlkqs0kiy/Microsoft.NET.Native.Runtime.1.7.appx?dl=1" />
-	<Package Name="Microsoft.NET.Native.Runtime.1.7" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.7.25531.0" ProcessorArchitecture="x64" Uri="https://www.dropbox.com/s/64r11dzkx2geiz4/Microsoft.NET.Native.Runtime.1.7.appx?dl=1" />
-		
-        <Package Name="Microsoft.VCLibs.140.00" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="14.0.25426.0" ProcessorArchitecture="x86" Uri="https://www.dropbox.com/s/1dxnt0h196no4fe/Microsoft.VCLibs.x86.14.00.appx?dl=1" />
-	<Package Name="Microsoft.VCLibs.140.00" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="14.0.25426.0" ProcessorArchitecture="x64" Uri="https://www.dropbox.com/s/7m5zrzxgwypi54t/Microsoft.VCLibs.x64.14.00.appx?dl=1" />
-	    
-        <Package Name="Microsoft.UI.Xaml.2.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="2.1810.11001.0" ProcessorArchitecture="x86" Uri="https://www.dropbox.com/s/vrfa9vrbc11to9c/Microsoft.UI.Xaml.2.0.appx?dl=1" />
-        <Package Name="Microsoft.UI.Xaml.2.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="2.1810.11001.0" ProcessorArchitecture="x64" Uri="https://www.dropbox.com/s/ytj99xjkj3tyz2r/Microsoft.UI.Xaml.2.0.appx?dl=1" />
-    </Dependencies>
-
-</AppInstaller>
