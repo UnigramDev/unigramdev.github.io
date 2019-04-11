@@ -7,8 +7,8 @@
     <MainBundle 
         Name="38833FF26BA1D.UnigramPreview"
         Publisher="CN=D89C87B4-2758-402A-8F40-3571D00882AB"
-        Version="3.4.2195.0"
-        Uri="%%URI%%" />
+        Version="3.4.2219.0"
+        Uri="https://www.dropbox.com/s/4zwjgjbdx6tr02t/38833FF26BA1D.UnigramPreview_3.4.2219.0_neutral_~_g9c9v27vpyspw.appxbundle?dl=1" />
 
     <Dependencies>
         <Package Name="Microsoft.NET.Native.Framework.1.7" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.7.25531.0" ProcessorArchitecture="x86" Uri="https://www.dropbox.com/s/0nj5nn4b5vhvz0p/Microsoft.NET.Native.Framework.1.7.appx?dl=1" />
