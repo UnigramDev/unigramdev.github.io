@@ -8,7 +8,7 @@
         Name="38833FF26BA1D.UnigramPreview"
         Publisher="CN=D89C87B4-2758-402A-8F40-3571D00882AB"
         Version="3.6.2287.0"
-        Uri="https://www.dropbox.com/s/7anl4xcakx54ty9/38833FF26BA1D.UnigramPreview_3.6.2287.0_neutral_~_g9c9v27vpyspw.appxbundle?dl=1" />
+        Uri="https://www.dropbox.com/s/fgbv4dt0laxbk2d/38833FF26BA1D.UnigramPreview_3.6.2287.0_neutral_~_g9c9v27vpyspw.appxbundle?dl=1" />
 
     <Dependencies>
         <Package Name="Microsoft.NET.Native.Framework.1.7" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.7.25531.0" ProcessorArchitecture="x86" Uri="https://www.dropbox.com/s/0nj5nn4b5vhvz0p/Microsoft.NET.Native.Framework.1.7.appx?dl=1" />
@@ -20,8 +20,8 @@
         <Package Name="Microsoft.VCLibs.140.00" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="14.0.25426.0" ProcessorArchitecture="x86" Uri="https://www.dropbox.com/s/1dxnt0h196no4fe/Microsoft.VCLibs.x86.14.00.appx?dl=1" />
 	<Package Name="Microsoft.VCLibs.140.00" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="14.0.25426.0" ProcessorArchitecture="x64" Uri="https://www.dropbox.com/s/7m5zrzxgwypi54t/Microsoft.VCLibs.x64.14.00.appx?dl=1" />
 	    
-        <Package Name="Microsoft.UI.Xaml.2.1" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="2.1.190405004" ProcessorArchitecture="x86" Uri="https://www.dropbox.com/s/f3ee3i74eg5vrq0/Microsoft.UI.Xaml.2.1.appx?dl=1" />
-        <Package Name="Microsoft.UI.Xaml.2.1" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="2.1.190405004" ProcessorArchitecture="x64" Uri="https://www.dropbox.com/s/2jbhiu91ihii099/Microsoft.UI.Xaml.2.1.appx?dl=1" />
+        <Package Name="Microsoft.UI.Xaml.2.1" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="2.11904.5004.0" ProcessorArchitecture="x86" Uri="https://www.dropbox.com/s/ligwntgsd2v8jj6/Microsoft.UI.Xaml.2.1_2.11904.5004.0_x86__8wekyb3d8bbwe.Appx?dl=1" />
+        <Package Name="Microsoft.UI.Xaml.2.1" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="2.11904.5004.0" ProcessorArchitecture="x64" Uri="https://www.dropbox.com/s/vybr9rp8m9txqoe/Microsoft.UI.Xaml.2.1_2.11904.5004.0_x64__8wekyb3d8bbwe.Appx?dl=1" />
     </Dependencies>
 
 </AppInstaller>
