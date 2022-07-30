@@ -1,89 +1,223 @@
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>
-  Unigram
-  </title>
-  <style>body{    padding:5%;    display:flex;    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    line-height: normal;    color:#333333;    font-size:15px;}.t{    border:1px solid red;}.left-col{    flex: 0 0 200px;}.right-col{    flex: 1 1 30px;    max-width:650px;}img{    width:200px;    height:200px;    border: 1px solid #D2D2D2;}.additional-links-title{    margin-top:50px;    margin-bottom:20px;}.lg{    font-size:20px;}.xl{    font-size:34px;}button{    background-color:#0078D4;    color:#FFFFFF;    text-align:center;    width:150px;    height:40px;    border:none;    outline:none;    cursor: pointer;}a{    color: #0067B8;    text-decoration:none;    cursor: pointer;}.dark-blue{    color: #0078D4}.mb-24{    margin-bottom:24px;}.mr-28{    margin-right:28px;}.mb-12{    margin-bottom:12px;}.mb-28{    margin-bottom:28;}.key{    font-weight: bold;    margin-right:24px;    }.value{    flex: 0 0 }.info-row{    display:flex;}.info-row > div{    flex: 0 0 250px;}.mr-24{    margin-right:24px;}.alinks > a{    margin-bottom:15px;    display:block;}@font-face {    font-family: 'FabricMDL2Icons';    src: url('data:application/octet-stream;base64,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') format('truetype');  }    .ms-Icon {    -moz-osx-font-smoothing: grayscale;    -webkit-font-smoothing: antialiased;    font-family: 'FabricMDL2Icons';    font-style: normal;    font-weight: normal;    speak: none;  }    .ms-Icon--ChevronDown:before{ content: "\E70D"; }  .ms-Icon--ChevronUp:before{ content: "\E70E"; }  .ms-Icon--ChevronRight:before { content: "\E76C"; }  .alinks{    max-height:0px;    transition: max-height .2s ease-out;    overflow:hidden;  }  input#achk:checked + .alinks{    height:auto;    max-height:400px;    transition: max-height .5s ease-in !important;  }  .sm{      font-size:10px;  }  label{      cursor: pointer;  }  .dlbuttons > a{   margin-right: 5px;  }  .app-image{        background-color:transparent;  }</style>
-</head>
-<body class="body">
-  <div class="left-col mr-28">
-	 <img alt='application image' class='app-image' src=' data:image/png;base64,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'>        
-	 <div class="lg additional-links-title">
-	 <label for="achk">
-	 Additional Links
-	 <i class="ms-Icon--ChevronDown ms-Icon sm">
-	 </i>
-	 </label>
-	 </div>
-	 <input type="checkbox" id="achk" style="display:none;">        
-	 <div class="alinks">
-	 <!--<a href='https://raw.githubusercontent.com/UnigramDev/Unigram/develop/appset.appinstaller/TestRS5_1.0.0.0_Debug_Test/TestRS5_1.0.0.0_x86_x64_arm_Debug.cer'>Publisher Certificate</a>-->
-	 <a href='https://unigramdev.github.io/appset.appinstaller'>App Installer File</a>
-	 <a href='https://www.dropbox.com/s/5fn0idvr3zi34mv/38833FF26BA1D.UnigramPreview_3.9.2505.0_neutral_~_g9c9v27vpyspw.appxbundle?dl=1'>Package Bundle</a>
-	 </div>
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://macos.telegram.org/ -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Telegram for macOS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Telegram for macOS">
+    <meta property="og:image" content="https://osx.telegram.org/updates/site/logo.png">
+    <meta property="og:site_name" content="Telegram">
+    <meta property="og:description" content="Experience Telegram on your mac in a swift and seamless way.">
+    
+    <meta property="fb:app_id" content="254098051407226">
+    <meta property="vk:app_id" content="3782569">
+    <meta name="apple-itunes-app" content="app-id=747648890">
+    <meta name="telegram:channel" content="@telegram">
+    
+    <link rel="icon" type="image/svg+xml" href="https://macos.telegram.org/img/website_icon.svg?4">
+<link rel="apple-touch-icon" sizes="180x180" href="https://macos.telegram.org/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://macos.telegram.org/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://macos.telegram.org/img/favicon-16x16.png">
+<link rel="alternate icon" href="https://macos.telegram.org/img/favicon.ico" type="image/x-icon">
+    <link href="/img/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="/img/telegram.css" rel="stylesheet" media="screen">
+  </head>
+  <body class="">
+    <div id="fb-root"></div>
+    <div class="tl_page_wrap">
+      <div class="container clearfix tl_page_container  tl_main_page_container">
+        <div class="tl_page">
+          <div class="tl_main_wrap">
+  <div class="tl_main_logo_wrap">
+    <a href="https://unigramdev.github.io/" class="tl_main_logo">
+      <div class="tl_main_logo play" style="background-image: url(/img/t_logo_sprite.svg);"></div>
+      <h1 class="tl_main_logo_title">Unigram</h1>
+    </a>
+    <p class="tl_main_logo_lead"></p>
   </div>
-  <div class="right-col">
-	 <div class="app-title xl  mb-24 dark-blue">
-	 Unigram - A Telegram universal experience
-	 </div>
-	 <div class="app-version lg mb-24">
-	 Unigram
-	 3.9.2505.0
-	 </div>
-	 <div class="app-description mb-24">
-An unofficial uwp Telegram client for Windows 10 devices.
-Based on TDlib and specifically optimised for Windows 10, Unigram offers a bunch of features, included Action Centre support, calls, secret chats, instant view, built-in app lock and filter chats by type, unread and muted state.
-	 </div>
-	 <div class="mb-12 dlbuttons">
-	 <a href='ms-appinstaller:?source=https://unigramdev.github.io/appset.appinstaller'><button>Get the app <i class='ms-Icon ms-Icon--ChevronRight sm'></i></button></a>
-	 </div>
-	 <div class="mb-24">
-	 <a href="https://go.microsoft.com/fwlink/?linkid=870616">
-	 Troubleshoot installation
-	 </a>
-	 </div>
-	 <div class="mb-28 lg">
-	 Application Information
-	 </div>
-	 <div class="info-table">
-		<div class="info-row">
-		   <div class="key">
-		   Version
-		   </div>
-		   <div class="value">
-		   3.9.2505.0
-		   </div>
-		</div>
-		<br/>            
-		<div class="info-row">
-		   <div class="key">
-		   Required Operating System
-		   </div>
-		   <div class="value">
-		   10.0.15063.0
-		   </div>
-		</div>
-		<br/>            
-		<div class="info-row">
-		   <div class="key">
-		   Architectures
-		   </div>
-		   <div class="value">
-		   x86|x64|ARM
-		   </div>
-		</div>
-		<br/>            
-		<div class="info-row">
-		   <div class="key">
-		   Publisher
-		   </div>
-		   <div class="value">
-		   Fela Ameghino
-		   </div>
-		</div>
-	 </div>
+</div>
+
+<div class="td_content_wrap clearfix">
+
+  <div class="td_screenshot_macos"></div>
+
+  <div class="td_download_wrap"><a href="https://telegram.org/dl/macos" class="td_download_btn td_osx"><i class="td_download_icon"></i> Get Unigram for <b>Windows</b></a></div>
+
+  <div class="td_download_add_wrap"><a href="https://www.microsoft.com/store/apps/9n97zckpd60q" class="td_download_add">Microsoft Store version</a></div>
+
+  <div id="td_versions">
+    <div class="td_about_license">This software is available under <a href="https://github.com/UnigramDev/Unigram/blob/develop/LICENSE">GPL v3</a> license.<br><br>Source code is available on <a href="https://github.com/UnigramDev/Unigram">GitHub</a>.<br><br><a href="https://telegram.org/dl/macos/beta">Beta version</a></div>
   </div>
-</body>
-</html>
+
+  <div class="td_changelog_wrap">
+    <a name="changelog" id="changelog"></a>
+    <div id="dev_page_content_wrap" class=" ">
+  <div class="dev_page_bread_crumbs"></div>
+  <h1 id="dev_page_title">Version history</h1>
+  
+  <div id="dev_page_content">
+  </ul>
+
+  <h3><a class="anchor" name="v8-8-2022-06-19" href="https://unigramdev.github.io/#v8-8-2022-06-19"><i class="anchor-icon"></i></a>8.8 <strong>2022-06-19</strong></h3>
+  <ul>
+  <strong>700 MILLION USERS AND TELEGRAM PREMIUM</strong><br>
+  <strong>NEW PREMIUM FEATURES</strong><br>
+  <strong>Premium: 4 GB Uploads</strong><br>
+  <li>Send media and files each up to 4 GB in size.</li>
+  <strong>Premium: Faster Downloads</strong><br>
+  <li>Download media and files at the fastest possible speed, with no limits.</li>
+  <strong>Premium: Doubled Limits</strong><br>
+  <li>Follow up to 1000 channels.</li>
+  <li>Connect 4 accounts in any app.</li>
+  <li>Organize your chats into 20 folders, holding 200 chats each.</li>
+  <li>Pin 10 chats in your main list.</li>
+  <li>Reserve up to 20 public t.me links.</li>
+  <li>Save 400 favorite GIFs and 10 favorite stickers.</li>
+  <li>Write a longer bio for your profile and include links.</li>
+  <li>Include longer captions for photos and videos.</li>
+  <strong>Premium: Voice-to-Text</strong><br>
+  <li>Get a new button next to any voice message to generate a transcript of its audio.</li>
+  <strong>Premium: Unique Reactions and Stickers</strong><br>
+  <li>React with even more emoji, including :clown: and :hearteyes:</li>
+  <li>Send unique stickers with additional effects, updated monthly.</li>
+  <strong>Premium: Chat Management</strong><br>
+  <li>Set a default chat folder or enable tools to auto-archive and hide new chats.</li>
+  <strong>Premium: Badges and Animated Profile Pictures</strong><br>
+  <li>Subscribers have a badge next to their name, showing they help support Telegram.</li>
+  <li>Show off your profile video that will be animated for everyone in chats and the chat list.</li>
+  <strong>Premium: No Ads</strong><br>
+  <li>Sponsored Messages that are sometimes shown in public channels will no longer appear.</li>
+  <strong>NEW FREE FEATURES</strong><br>
+  <strong>Join Requests for Public Groups</strong><br>
+  <li>Enable join requests for your public groups – no invite links required.</li>
+  <li>Users who open the group will see an 'Apply to Join Group' button.</li>
+  <li>Once approved by an admin, users will be able to participate in the chat.</li>
+  <strong>Verification Badges in Chats</strong><br>
+  <li>Verified groups and channels now also show their badge at the top of the chat.</li>
+  <strong>Better Bots</strong><br>
+  <li>Include a photo or video in the "What can this bot do?" section of your bot.</li>
+  <li>Bots that are integrated into the attachment menu can be programmed to work in groups and channels.</li>
+  </ul>
+  
+  <h3><a class="anchor" name="v8-6-2022-03-11" href="https://unigramdev.github.io/#v8-6-2022-03-11"><i class="anchor-icon"></i></a>8.6 <strong>2022-03-11</strong></h3>
+  <ul>
+  <strong>DOWNLOAD MANAGER, LIVE STREAMS WITH OTHER APPS AND MORE</strong><br>
+  <strong>Download Manager</strong><br>
+  <li>Check the status of media and file downloads by tapping the new icon in the Search bar. </li>
+  <li>View recently downloaded files from the new ‘Downloads’ tab in Search.</li>
+  <li>Pause and resume unfinished downloads.</li>
+  <strong>Live Streams with other apps</strong><br>
+  <li>Manage Live Streams in your groups and channels using external software such as OBS Studio or XSplit Broadcaster.</li>
+  <strong>Phone Number Links</strong><br>
+  <li>Share a direct t.me link to your phone number that instantly opens a chat with you.</li>
+  <li>Use the full number in international format, like t.me/+123456789</li>
+  </ul>
+  
+  <h3><a class="anchor" name="v8-5-2022-01-31" href="https://unigramdev.github.io/#v8-5-2022-01-31"><i class="anchor-icon"></i></a>8.5 <strong>2022-01-31</strong></h3>
+  <ul>
+  <strong>VIDEO STICKERS, BETTER REACTIONS AND MORE</strong><br>
+  <strong>Video Stickers</strong><br>
+  <li>Use a new type of detailed stickers with smooth animations.</li>
+  <li>Create new sets by sending .webm videos to @stickers.</li>
+  <li>Bring your custom animated stickers from other apps.</li>
+  <strong>Reactions</strong><br>
+  <li>Right click a message for more reactions. </li>
+  <li>Group and Channel admins can enable reactions in their chat via Chat Info > Edit > Reactions.</li>
+  <li>See real-time animations in chat when a user reacts to your message.</li>
+  <li>React with additional emoji: 🥰🤯🤔🤬👏. </li>
+  <strong>Read Status for Reactions</strong><br>
+  <li>Tap the new button in chats to jump to your messages that have unseen reactions.</li>
+  <li>Watch the animations for unseen reactions play when you hit the button.</li>
+  </ul>
+  
+  <h3><a class="anchor" name="v8-4-2022-01-02" href="https://unigramdev.github.io/#v8-4-2022-01-02"><i class="anchor-icon"></i></a>8.4 <strong>2022-01-02</strong></h3>
+  <ul>
+  <strong>SPOILERS AND TRANSLATION</strong><br>
+  <strong>Spoilers</strong><br>
+  <li>Select text when typing and choose 'Spoiler' formatting to hide some or all of the contents of a message.</li>
+  <li>Tap the spoiler animation in chat to reveal its hidden text.</li>
+  <li>Spoiler formatting hides text in chat, as well as in the chat list and notifications.</li>
+  <strong>Translation</strong><br>
+  <li>Turn on the Translation option in Settings > Languages. </li>
+  <li>Press and hold a message to translate it into another language.</li>
+  </ul>
+  
+  <h3><a class="anchor" name="v8-3-2021-12-07" href="https://unigramdev.github.io/#v8-3-2021-12-07"><i class="anchor-icon"></i></a>8.3 <strong>2021-12-07</strong></h3>
+  <ul>
+  <strong>PROTECTED CONTENT, DELETE BY DATE, DEVICE MANAGEMENT AND MORE</strong><br>
+  <strong>Protected Content in Groups and Channels</strong><br>
+  <li>Content creators can restrict the ability to forward messages from their groups and channels.</li>
+  <li>When forwarding is restricted, users will also be unable to directly save media from the chat or take screenshots.</li>
+  <li>Toggle this option on or off via Chat Info > Group / Channel Type.</li>
+  <strong>Delete Messages by Date</strong><br>
+  <li>Clear messages in one-on-one chats from a specific date or period of time.</li>
+  <li>Tap the date header in a chat to open the calendar and select a single day or range to delete.</li>
+  <strong>Manage Connected Devices</strong><br>
+  <li>Choose how long a device may stay inactive before it's logged out automatically.</li>
+  <li>Select a device to control whether it is allowed to accept Calls or new Secret Chats.</li>
+  <strong>Anonymous Posting in Public Groups</strong><br>
+  <li>Comment as one of your channels in public groups and channel comments.</li>
+  <li>Tap the profile picture next to the message bar to choose which channel you will appear as when you send the message.</li>
+  </ul>
+  
+  <h3><a class="anchor" name="v8-1-2021-09-19" href="https://unigramdev.github.io/#v8-1-2021-09-19"><i class="anchor-icon"></i></a>8.1 <strong>2021-09-19</strong></h3>
+  <ul>
+  <strong>CHAT THEMES, INTERACTIVE EMOJI, READ RECEIPTS IN GROUPS AND LIVE STREAM RECORDING</strong><br>
+  <strong>Chat Themes</strong><br>
+  <li>Choose one of 8 new preset themes for any individual private chat.</li>
+  <li>Tap the chat header > More (⋯) > 'Change Colors' to pick a theme.</li>
+  <li>Both chat participants will see the same theme in that chat – on all their devices.</li>
+  <li>Each new theme features colorful gradient message bubbles, beautifully animated backgrounds and unique background patterns.</li>
+  <li>All chat themes have day and night versions and will follow your overall dark mode settings.</li>
+  <li>More chat themes coming soon.</li>
+  <strong>Interactive Emoji</strong><br>
+  <li>Some animated emoji now have fullscreen effects.</li>
+  <li>Send 🎆 🎉 🎈 👍 💩 or ❤️ to any private chat, then tap on the animated emoji to launch the effect.</li>
+  <li>If your chat partner also has the chat open, you will both see the effects and feel the vibrations simultaneously.</li>
+  <li>See the "Watching" status when your chat partner is enjoying emoji effects with you.</li>
+  <li>More interactive emoji coming soon.</li>
+  <strong>Read Receipts in Small Groups</strong><br>
+  <li>Select one of your outgoing messages in small groups to see who recently viewed it.</li>
+  <li>To protect privacy, read receipts are only stored for 7 days after the message was sent.</li>
+  <strong>Record Live Streams and Video Chats</strong><br>
+  <li>Record video and audio from live broadcasts in your group or channel.</li>
+  <li>Admins can start recording from the Settings menu (⋯).</li>
+  <li>Choose between recording in portrait or landscape orientation.</li>
+  <li>Finished recordings are sent to the admin's Saved Messages and can be easily shared.</li>
+  </ul>
+  
+  <h3><a class="anchor" name="v7-8-2021-06-25" href="https://unigramdev.github.io/#v7-8-2021-06-25"><i class="anchor-icon"></i></a>7.8 <strong>2021-06-25</strong></h3>
+  <ul>
+  <strong>GROUP VIDEO CALLS AND ANIMATED BACKGROUNDS</strong><br>
+  <strong>Group Video Calls</strong><br>
+  <li>Start video conferences from Voice Chats in any group.</li>
+  <li>Share your screen or video from your camera with up to 30 participants (limit to be increased soon).</li>
+  <li>Talk without video with an unlimited number of participants.</li>
+  <li>Create voice chats from the info page of any group where you are an admin.</li>
+  <li>Group video calls are supported natively on all devices, including iPads and laptops.</li>
+  <strong>Animated Backgrounds</strong><br>
+  <li>Meet animated backgrounds for chats – first time in a messaging app! These multi-color gradient backgrounds are generated algorithmically and move beautifully every time you send a message.</li>
+  <li>Create your own backgrounds in Appearance Settings by selecting unique combinations of colors and applying any of the dozens of patterns. </li>
+  <li>Share your animated backgrounds with friends and family to upgrade them to a new level of messaging experience.</li>
+  <li>Choose between dozens of new gorgeous animated backgrounds in Appearance Settings > Background.</li>
+  <li>Backgrounds are now partially visible through the header and the footer in chats.</li>
+  
+  </div>
+  
+</div>
+  </div>
+</div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="/img/main.js.download"></script>
+    
+    <script>backToTopInit("Go up");
+removePreloadInit();
+</script><a class="back_to_top_wrap" onclick="backToTopGo()" style="width: 1517px;"><div class="back_to_top" style="height: 1264px;"><i class="icon icon-to-top"></i>Go up</div></a>
+  
+
+<!-- page generated in 20.91ms -->
+</body></html>
