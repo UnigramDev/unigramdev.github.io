@@ -289,7 +289,7 @@ a:hover {
 #dev_page_content > ul:not(.nav) li,
 #dev_page_content > ol:not(.nav) ul:not(.nav) li,
 #dev_page_content ul.bulleted li {
-  background-image: url(/img/bullet.png?3);
+  background-image: url(../img/bullet.png?3);
   background-repeat: no-repeat;
   background-position: 0px 8px;
   padding-left: 20px;
@@ -4573,7 +4573,7 @@ i.tl_telegram_share_icon {
     background-size: 20px 152px;
   }
   .td_screenshot_macos {
-    background-image: url(https://osx.telegram.org/updates/site/artboard_2x.png);
+    background-image: url(/img/artboard_2x.png);
     background-size: 420px 280px;
     height: 280px;
   }
