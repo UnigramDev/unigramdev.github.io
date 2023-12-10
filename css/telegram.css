@@ -495,12 +495,12 @@ i.anchor-icon:hover {
   cursor: default;
   position: fixed;
   left: 0;
-  top: 50px;
+  /* top: 50px; */
   bottom: 0;
   outline: none;
   box-shadow: none;
   opacity: 0;
-  /*display: none;*/
+  /* display: none; */
   transition: opacity ease-in-out 0.2s;
   -webkit-transition: opacity ease-in-out 0.2s;
   direction: ltr;
@@ -533,7 +533,7 @@ i.anchor-icon:hover {
 }
 .icon-to-top {
   display: inline-block;
-  background: url(../img/back_to_top_1x.png) 0 50% no-repeat;
+  background: url(../img/back_to_top.png) 0 50% no-repeat;
   width: 16px;
   height: 7px;
   margin-right: 12px;
@@ -4962,6 +4962,7 @@ i.tl_telegram_share_icon {
   }
   .td_screenshot {
     margin-top: 26px;
+    margin-bottom: 48px;
   }
   .td_content_title {
     font-size: 22px;
