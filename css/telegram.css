@@ -5086,3 +5086,13 @@ i.tl_telegram_share_icon {
   max-width: 600px;
   margin: 0 auto;
 }
+
+i.premium-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  max-width: 16px;
+  background: url(../img/5888993774540951956.webp) 0 0 no-repeat;
+  background-size: 18px 18px;
+  margin-left: -20px;
+}
